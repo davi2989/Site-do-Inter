@@ -10,5 +10,30 @@ nav ul {
     list-style-type: none;
     display: flex;
     gap: 1rem;
-
+    text-decoration: none;
+    padding: 10px;
+}
+nav ul li{
+    display: inline;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: #c8102e;
+    text-decoration: none;
+    padding: 10px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: rgb(197, 113, 113);
+    border-color: rgb(197, 113, 113);
+    border-radius: 10px;
+  
+}
+#idolos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
 }
