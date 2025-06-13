@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 #cabecalho {
     background-color: #c8102e;
     color: white;
@@ -36,3 +44,7 @@ nav ul li a:hover{
     justify-content: space-around;
     flex-direction: column;
 }
+@media screen and(max-width: 768px){
+    header, main, footer{
+        padding: 1rem 2%;
+    }}
