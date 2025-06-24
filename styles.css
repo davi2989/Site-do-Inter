@@ -25,7 +25,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
+   border: solid black 2px;
 }
 
 #cabecalho .logo {
@@ -64,15 +65,34 @@ nav ul li:hover {
 }
 
 #banner {
-    background-color: var(--vermelho);
-    color: var(--branco);
-    padding: 50px 20px;
+    padding: 30px 20px;
     text-align: center;
+    margin-top: 40px;
+    border-radius: 50px;
+    background-color: var(--vermelho);
+    color: rgb(255, 255, 255);
+    border: solid black 2px;
+    margin-bottom: 10px;
 }
 
 #banner h2 {
     margin-bottom: 10px;
 }
+
+#bannerimg {
+    position: relative;
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzg0bGV3d2JtNXcyeDB3ZmUxMWV1M3R3cG1ldjFybm03Nmdxd3lxZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9J8PGEcN06jLXFIPnr/giphy.gif');
+    height: 400px;
+    border-radius: 20px;
+    width: 100vw;
+    margin: 20px auto;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
+
 
 section {
     padding: 40px 20px;
@@ -233,6 +253,8 @@ form button:hover {
 #confirmacao .btn-voltar:hover {
     background-color: rgb(197, 113, 113);
 }
+
+    
 
 
 @media (max-width: 600px) {
