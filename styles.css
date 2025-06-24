@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 :root {
     --vermelho: #c8102e;
     --branco: #ffffff;
@@ -12,14 +11,12 @@
     --preto: #111111;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: var(--cinza-claro);
     color: var(--preto);
     line-height: 1.6;
 }
-
 
 #cabecalho {
     background-color: var(--vermelho);
@@ -66,7 +63,6 @@ nav ul li:hover {
     background-color: rgb(197, 113, 113);
 }
 
-
 #banner {
     background-color: var(--vermelho);
     color: var(--branco);
@@ -78,13 +74,11 @@ nav ul li:hover {
     margin-bottom: 10px;
 }
 
-
 section {
     padding: 40px 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
-
 
 .conquista {
     background-color: var(--branco);
@@ -97,7 +91,6 @@ section {
 .conquista ul {
     padding-left: 20px;
 }
-
 
 .galeria {
     display: flex;
@@ -131,7 +124,6 @@ section {
     font-size: 15px;
 }
 
-/* Formulário */
 #contato {
     background-color: var(--branco);
     padding: 40px 20px;
@@ -240,4 +232,70 @@ form button:hover {
 
 #confirmacao .btn-voltar:hover {
     background-color: rgb(197, 113, 113);
+}
+
+
+@media (max-width: 600px) {
+    #cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #cabecalho nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #cabecalho img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .conquista {
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #contato {
+        padding: 30px 20px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        padding: 12px;
+    }
+
+    #confirmacao h2 {
+        font-size: 1.6rem;
+    }
+
+    #confirmacao p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    #cabecalho nav ul li a {
+        padding: 8px 10px;
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    .conquista ul {
+        padding-left: 15px;
+    }
+
+    .btn-voltar img {
+        width: 35px;
+    }
+
+    #confirmacao h2 {
+        font-size: 1.4rem;
+    }
 }
